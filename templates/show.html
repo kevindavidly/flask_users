@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Users</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<a href="/users">Home</a>
+
+</head>
+
+<body>
+   
+<h1>User {{show_user[0].id}}</h1>
+<p>Full Name: {{show_user[0].first_name}}
+{{show_user[0].last_name}}</p>
+<p> Email:{{show_user[0]["email"]}} </p>
+<p> Created On {{show_user[0]["created_at"]}}</p>
+<p> Last Updated On {{show_user[0]["updated_at"]}}</p>
+
+
+</body>
+<a href="/users/{{show_user[0].id}}/edit">Edit</a> | <a href="/users/{{show_user[0].id}}/delete">Delete</a>
+</html>
+       
